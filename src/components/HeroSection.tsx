@@ -11,9 +11,9 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  title = "Hi, I'm John Doe",
-  subtitle = "A passionate Software Engineer crafting elegant solutions through code",
-  imageUrl = "/images/tempo-image-20250125T012248789Z.jpeg",
+  title = "Hi, I'm Navya Vohra",
+  subtitle = "Mobile Application Developer Enthusiast | iOS Development Mentor @ Apple | Computer Science Graduate",
+  imageUrl = "icon.png",
   onExploreClick = () => {},
 }: HeroSectionProps) => {
   return (
@@ -26,15 +26,22 @@ const HeroSection = ({
           className="space-y-8"
         >
           <motion.div
-            initial={{ scale: 0.5, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            initial={{ scale: 0.9, y: 0 }}
+            animate={{
+              scale: [1, 1.03, 1],
+              y: [0, -10, 0],
+            }}
+            transition={{
+              duration: 3,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
             className="relative w-48 h-48 mx-auto mb-8"
           >
             <img
               src={imageUrl}
               alt="Profile"
-              className="rounded-full shadow-xl border-4 border-primary/10 animate-bounce"
+              className=""
             />
           </motion.div>
 

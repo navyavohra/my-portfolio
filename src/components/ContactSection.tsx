@@ -1,11 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Mail, Linkedin, Instagram, Github, FileText } from "lucide-react";
-import { useTheme } from "./theme-provider";
 
 const Footer = () => {
-  const { theme } = useTheme();
-
   const iconVariant = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeInOut" } },
@@ -17,14 +14,8 @@ const Footer = () => {
   };
 
   return (
-    <footer
-      className={`py-10 border-t shadow-md bg-background ${
-        theme === "high-contrast" || theme === "protanopia"
-          ? "border-primary"
-          : "border-gray-200"
-      }`}
-    >
-      <div className="container mx-auto flex flex-col items-center sm:flex-row justify-between px-6">
+    <footer className="w-full bg-transparent">
+      <div className="container mx-auto flex flex-col items-center sm:flex-row justify-between px-6 py-10">
         {/* Icons Section */}
         <motion.div
           variants={iconVariant}

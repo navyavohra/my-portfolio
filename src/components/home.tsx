@@ -6,7 +6,7 @@ import ProjectsGrid from "./ProjectsGrid";
 import SkillsSection from "./SkillsSection";
 import ContactSection from "./ContactSection";
 import WorkExp from "./WorkExp";
-
+import AchivementsSection from "./Achivements";
 const Home = () => {
   const handleExploreClick = () => {
     const projectsSection = document.getElementById("projects");
@@ -81,6 +81,18 @@ const Home = () => {
             viewport={{ once: true, amount: 0.3 }}
           >
             <SkillsSection />
+          </motion.div>
+        </section>
+
+        {/* Achivements Section */}
+        <section id="achivements" className="py-16">
+          <motion.div
+            variants={scrollVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <AchivementsSection />
           </motion.div>
         </section>
 

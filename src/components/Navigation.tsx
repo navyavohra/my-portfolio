@@ -16,6 +16,7 @@ const Navigation = ({
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
     { id: "workExp", label: "WorkExp" },
+    { id: "achivements", label: "Achivements" },
     { id: "contact", label: "Contact" },
   ],
 }: NavigationProps) => {

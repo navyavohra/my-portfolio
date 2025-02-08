@@ -1,4 +1,3 @@
-// src/components/WorkExp.tsx
 import React from 'react';
 
 const WorkExp = () => {

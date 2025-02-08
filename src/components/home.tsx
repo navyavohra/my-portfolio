@@ -66,8 +66,11 @@ const Home = () => {
             variants={scrollVariant}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-          >
+            viewport={{ once: true, amount: 0.3 }}className="container mx-auto px-4"
+            >
+              <h2 className="text-3xl font-bold text-center mb-8">
+                Work Experience
+              </h2>
             <WorkExp />
           </motion.div>
         </section>
@@ -91,7 +94,11 @@ const Home = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-          >
+            className="container mx-auto px-4"
+            >
+              <h2 className="text-3xl font-bold text-center mb-8">
+                Awards and Achivements
+              </h2>
             <AchivementsSection />
           </motion.div>
         </section>

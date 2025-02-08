@@ -11,8 +11,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  title = "Will you be my valentine?",
-  subtitle = "I worked really hard on this website, please be my valentine",
+  title = "Navya Vohra",
+  subtitle = "iOS Developer, Open Source Contributor, and Tech Enthusiast",
   imageUrl = "icon.png",
   onExploreClick = () => {},
 }: HeroSectionProps) => {

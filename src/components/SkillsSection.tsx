@@ -14,22 +14,34 @@ interface Skill {
   color: string;
 }
 
-interface SkillsSectionProps {
-  skills?: Skill[];
-}
+const skills: Skill[] = [
+  // Mobile Development
+  { name: "Kotlin", icon: "📱", color: "text-blue-500" },
+  { name: "Swift", icon: "", color: "text-red-500" },
+  { name: "React Native", icon: "⚛️", color: "text-blue-400" },
 
-const SkillsSection = ({
-  skills = [
-    { name: "React", icon: "⚛️", color: "text-blue-500" },
-    { name: "TypeScript", icon: "📘", color: "text-blue-600" },
-    { name: "Node.js", icon: "🟢", color: "text-green-500" },
-    { name: "Python", icon: "🐍", color: "text-yellow-500" },
-    { name: "Docker", icon: "🐳", color: "text-blue-400" },
-    { name: "AWS", icon: "☁️", color: "text-orange-500" },
-    { name: "GraphQL", icon: "📊", color: "text-pink-500" },
-    { name: "MongoDB", icon: "🍃", color: "text-green-600" },
-  ],
-}: SkillsSectionProps) => {
+  // Web Frontend Development
+  { name: "HTML", icon: "</>", color: "text-red-600" },
+  { name: "CSS", icon: "🌈", color: "text-blue-700" },
+  { name: "JavaScript", icon: "🖥️", color: "text-yellow-600" },
+  { name: "Angular", icon: "🅰️", color: "text-red-600" },
+
+  // Backend Development
+  { name: "Node.js", icon: "🟩", color: "text-green-500" },
+  { name: "Python", icon: "🐍", color: "text-yellow-500" },
+
+  // Database Technologies
+  { name: "MySQL", icon: "🛢️", color: "text-blue-700" },
+  { name: "Oracle", icon: "⭕", color: "text-orange-600" },
+  { name: "MongoDB", icon: "🍃", color: "text-green-600" },
+
+  // Deployment and Containers
+  { name: "Docker", icon: "🐳", color: "text-blue-400" },
+  { name: "AWS", icon: "☁️", color: "text-orange-500" },
+];
+
+
+const SkillsSection = () => {
   return (
     <section className="py-20 bg-background min-h-[400px] w-full">
       <div className="container mx-auto px-4">

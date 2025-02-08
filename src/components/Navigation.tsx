@@ -15,6 +15,7 @@ const Navigation = ({
     { id: "hero", label: "Home" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
+    { id: "workExp", label: "WorkExp" },
     { id: "contact", label: "Contact" },
   ],
 }: NavigationProps) => {
@@ -168,8 +169,6 @@ const Navigation = ({
           </div>
         </div>
       </motion.nav>
-
-      
     </div>
   );
 };

@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 interface AchivementsModalProps {
   isOpen?: boolean;
   onClose?: () => void;
-  work?: {
+  achivements?: {
     title: string;
     description: string;
     image: string;
